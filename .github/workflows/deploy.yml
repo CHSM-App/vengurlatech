@@ -27,11 +27,13 @@ jobs:
         working-directory: frontend
         run: npm ci
 
+      - name: Create frontend production env
+        working-directory: frontend
+        run: echo "VITE_API_URL=" > .env.production
+
       - name: Build frontend
         working-directory: frontend
         run: npm run build
-        # Vite reads .env.production automatically — VITE_API_URL is empty
-        # so all API calls are relative (/api/...) on the same domain.
 
       # ── Assemble backend branch content ────────────────────────────────────
       # We push to a separate `backend` branch that contains:
