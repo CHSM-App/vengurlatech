@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(180deg); }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeInUp-delay1 {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+.animate-fadeInUp-delay2 {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
+}
+
+.animate-fadeInUp-delay3 {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.9s forwards;
+}
+
+.hero-rotate::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(220, 20, 60, 0.1) 0%, transparent 70%);
+  animation: rotate 30s linear infinite;
+}
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #dc143c, #ff4757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #dc143c, #ff4757);
+}
+
+.service-card-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #dc143c, #ff4757);
+  transition: all 0.4s ease;
+}
+
+.service-card-top:hover::before {
+  left: 0;
+}
