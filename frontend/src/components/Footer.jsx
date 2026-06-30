@@ -6,13 +6,13 @@ export default function Footer() {
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '2rem' }}>
           <div>
-            <h3 style={{ color: '#dc143c', marginBottom: '1.5rem', fontSize: '1.25rem' }}>VengurlaTech</h3>
+            <h3 style={{ color: '#dc143c', marginBottom: '1.5rem', fontSize: '1.25rem' }}>Vengurla Tech</h3>
             <p style={{ color: '#ccc', lineHeight: 1.6 }}>Pioneering Innovation in Technology Solutions. We help businesses transform digitally and achieve their goals with cutting-edge technology.</p>
           </div>
           <div>
             <h3 style={{ color: '#dc143c', marginBottom: '1.5rem', fontSize: '1.25rem' }}>Quick Links</h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              {[['/', 'Home'], ['/about', 'About'], ['/services', 'Services'], ['/contact', 'Contact']].map(([to, label]) => (
+              {[['/', 'Home'], ['/about', 'About'], ['/services', 'Services'], ['/contact', 'Contact'], ['/careers', 'Careers']].map(([to, label]) => (
                 <li key={to} style={{ marginBottom: '0.75rem' }}>
                   <Link to={to} style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }}
                     onMouseEnter={e => e.target.style.color = '#dc143c'}

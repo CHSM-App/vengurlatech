@@ -16,7 +16,7 @@ export default function About() {
     <div>
       <div style={{ background: 'linear-gradient(135deg, #dc143c, #ff4757)', color: 'white', padding: '8rem 0 4rem', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem', position: 'relative', zIndex: 1 }}>
-          <h1 style={{ fontSize: 'clamp(2.5rem,5vw,4rem)', fontWeight: 700, marginBottom: '1rem' }}>About VengurlaTech</h1>
+          <h1 style={{ fontSize: 'clamp(2.5rem,5vw,4rem)', fontWeight: 700, marginBottom: '1rem' }}>About Vengurla Tech</h1>
           <p style={{ fontSize: '1.25rem' }}>Learn more about our company, mission, and values</p>
         </div>
       </div>

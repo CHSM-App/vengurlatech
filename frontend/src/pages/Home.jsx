@@ -42,7 +42,7 @@ export default function Home() {
         <div className="hero-rotate" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} />
         <div style={{ maxWidth: 900, zIndex: 2, position: 'relative', padding: '0 2rem' }}>
           <h1 className="animate-fadeInUp-delay1" style={{ fontSize: 'clamp(2.5rem,5vw,4rem)', marginBottom: '1.5rem', fontWeight: 700, color: '#1a1a1a' }}>
-            <span className="gradient-text">VengurlaTech</span> Private Limited
+            <span className="gradient-text">Vengurla Tech</span> Private Limited
           </h1>
           <p className="animate-fadeInUp-delay2" style={{ fontSize: 'clamp(1.1rem,2.5vw,1.5rem)', marginBottom: '3rem', color: '#666' }}>
             Pioneering Innovation in Technology Solutions for Modern Businesses
